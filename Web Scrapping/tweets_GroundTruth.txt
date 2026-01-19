@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="fr" xml:lang="fr">
+<head>
+    <title>UP1-C-ELP-B5IA0119-06 - Applied Data Science | EPI</title>
+    <link rel="shortcut icon" href="https://cours.univ-paris1.fr/pluginfile.php/1/theme_boost_union/favicon/64x64/1764148000/favicon.png" />
+    <style type="text/css">.admin_settingspage_tabs_with_tertiary .dropdown-toggle { font-size: 1.875rem !important; }
+h2:has(+ .admin_settingspage_tabs_with_tertiary) { display: none; }</style><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, UP1-C-ELP-B5IA0119-06 - Applied Data Science | EPI" />
+<link rel="stylesheet" type="text/css" href="https://cours.univ-paris1.fr/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://cours.univ-paris1.fr/theme/styles.php/boost_union/1764148000_1752072070/all" />
+<link rel="stylesheet" type="text/css" href="https://cours.univ-paris1.fr/local/accessibility/styles.css" />
+<link rel="stylesheet" type="text/css" href="https://cours.univ-paris1.fr/local/accessibility/styles.php" />
+<link rel="stylesheet" type="text/css" href="https://cours.univ-paris1.fr/course/format/onetopic/styles.php" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/cours.univ-paris1.fr","apibase":"https:\/\/cours.univ-paris1.fr\/r.php\/api","homeurl":{},"sesskey":"7bef143g9n","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1764148000","slasharguments":1,"theme":"boost_union","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1764148000","admin":"admin","svgicons":true,"usertimezone":"Europe\/Berlin","language":"fr","courseId":46762,"courseContextId":2451613,"contextid":2302671,"contextInstanceId":1654,"langrev":1764474004,"templaterev":"1764148000","siteId":1,"userId":1};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/cours.univ-paris1.fr\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/cours.univ-paris1.fr\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/cours.univ-paris1.fr\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/cours.univ-paris1.fr\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/cours.univ-paris1.fr\/theme\/yui_combo.php?m\/1764148000\/","combine":true,"comboBase":"https:\/\/cours.univ-paris1.fr\/theme\/yui_combo.php?","ext":false,"root":"m\/1764148000\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_offlinequiz-modform":{"requires":["base","node","event"]},"moodle-mod_offlinequiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_offlinequiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_offlinequiz-offlinequizbase","moodle-mod_offlinequiz-util-base","moodle-mod_offlinequiz-util-page","moodle-mod_offlinequiz-util-slot","moodle-course-util"]},"moodle-mod_offlinequiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_offlinequiz-util":{"requires":["node"],"use":["moodle-mod_offlinequiz-util-base"],"submodules":{"moodle-mod_offlinequiz-util-base":{},"moodle-mod_offlinequiz-util-slot":{"requires":["node","moodle-mod_offlinequiz-util-base"]},"moodle-mod_offlinequiz-util-page":{"requires":["node","moodle-mod_offlinequiz-util-base"]}}},"moodle-mod_offlinequiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_offlinequiz-offlinequizbase","moodle-mod_offlinequiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_offlinequiz-offlinequizbase":{"requires":["base","node"]},"moodle-mod_offlinequiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_offlinequiz-util","querystring-parse"]},"moodle-mod_offlinequiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_panoptobutton-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_panoptoltibutton-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/cours.univ-paris1.fr\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/cours.univ-paris1.fr\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1764148000\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/cours.univ-paris1.fr\/lib\/javascript.php\/1764148000\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/cours.univ-paris1.fr\/lib\/javascript.php\/1764148000\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/iframe-resizer@4.2.11/js/iframeResizer.min.js"></script>
+<script>
+    window.onload = function() {
+        iFrameResize({checkOrigin: false}, '#contentframe');
+    }
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+<?php if (isloggedin()) { ?>
+    <script> window.bandeau_ENT = { current: 'moodle-epi', hide_menu: true, no_footer: true,  layout_url: '/EsupUserApps/layout',no_titlebar: true, is_logged: true, logout: 'a[href*="/login/logout.php"]' } </script>
+    <script src="https://ent.univ-paris1.fr/ProlongationENT/loader.js"></script>
+<?php }?>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-enrol-index" class="format-topics limitedwidth  path-enrol dir-ltr lang-fr yui-skin-sam yui3-skin-sam cours-univ-paris1-fr pagelayout-incourse course-46762 context-2302671 category-1654 theme uses-drawers drawer-open-index nocourseindexcmicons theme_boost-union-footerbuttondesktop">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Passer au contenu principal</a>
+</div><script src="https://cours.univ-paris1.fr/lib/javascript.php/1764148000/lib/polyfills/polyfill.js"></script>
+<script src="https://cours.univ-paris1.fr/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.js"></script><script src="https://cours.univ-paris1.fr/lib/javascript.php/1764148000/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    
+    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand " aria-label="Navigation du site">
+        <div class="container-fluid">
+            <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary">
+                <span class="navbar-toggler-icon"></span>
+                <span class="sr-only">Panneau latéral</span>
+            </button>
+    
+            <a href="https://cours.univ-paris1.fr/" class="navbar-brand align-items-center m-0 me-4 p-0 aabtn   d-none d-md-flex  ">
+    
+                    EPI
+            </a>
+                <div class="primary-navigation">
+                    <nav class="moremenu navigation">
+                        <ul id="moremenu-692d733aa8c43-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+                                        <li data-key="home" class="nav-item " role="none" data-forceintomoremenu="false">
+                                                    <a role="menuitem" class="nav-link  active "
+                                                        href="https://cours.univ-paris1.fr/"
+                                                        
+                                                        
+                                                        aria-current="true"
+                                                        data-disableactive="true"
+                                                        
+                                                    >
+                                                        Accueil
+                                                    </a>
+                                        </li>
+                                        <li data-key="calendar" class="nav-item " role="none" data-forceintomoremenu="false">
+                                                    <a role="menuitem" class="nav-link   "
+                                                        href="https://cours.univ-paris1.fr/calendar/view.php?view=month"
+                                                        
+                                                        
+                                                        
+                                                        data-disableactive="true"
+                                                        tabindex="-1"
+                                                    >
+                                                        Calendrier
+                                                    </a>
+                                        </li>
+                                        <li class="dropdown theme-boost-union-smartmenu-carousel nav-item  " role="none" data-forceintomoremenu="false">
+                                            <a class="dropdown-toggle nav-link  " id="drop-down-692d733aa86e7" role="menuitem" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-692d733aa86e7"
+                                                
+                                                
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Index des espaces
+                                            </a>
+                                            <div class="dropdown-menu boost-union-moremenu" role="menu" id="drop-down-menu-692d733aa86e7" aria-labelledby="drop-down-692d733aa86e7">
+                                                <div data-toggle="smartmenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+                                                    <div class="carousel-inner">
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/mod/page/view.php?id=1357128" 
+                                                                        title="Index des espaces de cours par département d&#039;enseignement - Année 2025-2026"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Index des espaces 2025-2026 par département
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/mod/page/view.php?id=1165274" 
+                                                                        title="Index des espaces de cours par département d&#039;enseignement - Année 2024-2025"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Index des espaces 2024-2025 par département
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/mod/page/view.php?id=958472" 
+                                                                        title="Index des espaces de cours par département d&#039;enseignement - Année 2023-2024"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Index des espaces 2023-2024 par département
+                                                                    </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown theme-boost-union-smartmenu-carousel nav-item  " role="none" data-forceintomoremenu="false">
+                                            <a class="dropdown-toggle nav-link  " id="drop-down-692d733aa88cd" role="menuitem" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-692d733aa88cd"
+                                                
+                                                
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Mon parcours
+                                            </a>
+                                            <div class="dropdown-menu boost-union-moremenu" role="menu" id="drop-down-menu-692d733aa88cd" aria-labelledby="drop-down-692d733aa88cd">
+                                                <div data-toggle="smartmenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+                                                    <div class="carousel-inner">
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/calendar/" 
+                                                                        title="Calendrier des devoirs à rendre et des évaluations en ligne"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Calendrier
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/grade/report/overview/index.php" 
+                                                                        title="Mes notes de cours"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Notes
+                                                                    </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown theme-boost-union-smartmenu-carousel nav-item  " role="none" data-forceintomoremenu="false">
+                                            <a class="dropdown-toggle nav-link  " id="drop-down-692d733aa88fb" role="menuitem" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-692d733aa88fb"
+                                                
+                                                
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Ressources
+                                            </a>
+                                            <div class="dropdown-menu boost-union-moremenu" role="menu" id="drop-down-menu-692d733aa88fb" aria-labelledby="drop-down-692d733aa88fb">
+                                                <div data-toggle="smartmenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+                                                    <div class="carousel-inner">
+                                                                    <a class="dropdown-item " role="menuitem" href="#up" 
+                                                                        
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Ressources pédagogiques
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/fixe/annuaire-EPI" 
+                                                                        title="Portail des EPI ouverts à tous et d&#039;intérêt général"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Annuaire des EPI ouverts à tous et d'intérêt général
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://www.enseignementsup-recherche.gouv.fr/ressources-pedagogiques/ "target="_blank" 
+                                                                        title="Portail des ressources libres de l&#039;enseignement supérieur"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Ressources pédagogiques libres
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://www.canal-u.tv/ "target="_blank" 
+                                                                        title="Vidéothèque de l’enseignement supérieur et de la recherche"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Vidéothèque Canal-U
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="#up" 
+                                                                        
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Bibliothèque/Documentation
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://mikado.univ-paris1.fr "target="_blank" 
+                                                                        title="Portail des ressources électroniques des bibliothèques"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Bibliothèque numérique Mikado
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/fixe/SCD-BOB" 
+                                                                        title="L&#039;espace de la boîte à outils de la bibliothèque"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         BOB - Boîte à Outils de la Bibliothèque
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="#up" 
+                                                                        
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Langues
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="http://uoh.univ-montp3.fr/j_ameliore_ma_maitrise_du_francais/portail/ "target="_blank" 
+                                                                        title="Module e-learning d&#039;aide à la rédaction et à l&#039;orthographe"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                         Améliorer son français à l'écrit
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/fixe/EPIGRAM" 
+                                                                        title="L&#039;espace de découverte ou de perfectionnement de la grammaire anglaise"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        EPIGRAM
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/fixe/ami" 
+                                                                        title="La communauté d&#039;échanges linguistiques de l&#039;université"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Tandem
+                                                                    </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown theme-boost-union-smartmenu-carousel nav-item  " role="none" data-forceintomoremenu="false">
+                                            <a class="dropdown-toggle nav-link  " id="drop-down-692d733aa89b0" role="menuitem" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-692d733aa89b0"
+                                                
+                                                
+                                                
+                                                tabindex="-1"
+                                            >
+                                                Aide
+                                            </a>
+                                            <div class="dropdown-menu boost-union-moremenu" role="menu" id="drop-down-menu-692d733aa89b0" aria-labelledby="drop-down-692d733aa89b0">
+                                                <div data-toggle="smartmenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+                                                    <div class="carousel-inner">
+                                                                    <a class="dropdown-item " role="menuitem" href="#up" 
+                                                                        
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Aide étudiants
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/mod/page/view.php?id=293182%20%22target%3D%22_blank" 
+                                                                        title="Comment se connecter aux nouveaux EPI"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Comment se connecter
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/course/view.php?id=12%20%22target%3D%22_blank" 
+                                                                        title="Guide d&#039;utilisation pour les étudiants"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Guide EPI étudiants
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://ent.univ-paris1.fr/gun "target="_blank" 
+                                                                        title="Guide des services numériques pour les étudiant.e.s"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Guide des services numériques
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="#up" 
+                                                                        
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Aide enseignants
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/mod/page/view.php?id=293182%20%22target%3D%22_blank" 
+                                                                        title="Comment se connecter aux nouveaux EPI"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Comment se connecter
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/fixe/modedemploi "target="_blank" 
+                                                                        title="Guide d&#039;utilisation pour les enseignants"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Mode d'emploi des EPI
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/fixe/enseignerenligne "target="_blank" 
+                                                                        
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Construire un cours en ligne
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://cours.univ-paris1.fr/fixe/FAQ "target="_blank" 
+                                                                        title="Création, inscriptions, communication, accès utilisateurs"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Questions fréquentes
+                                                                    </a>
+                                                                    <a class="dropdown-item " role="menuitem" href="https://ent.univ-paris1.fr/gun-pers "target="_blank" 
+                                                                        title="Guide des services numériques pour le personnel"
+                                                                        
+                                                                        data-disableactive="true"
+                                                                        tabindex="-1"
+                                                                    >
+                                                                        Guide des services numériques
+                                                                    </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
+                                    <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-692d733aa8c43" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                        Plus
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-692d733aa8c43" role="menu">
+                                    </ul>
+                                </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+            <ul class="navbar-nav d-none d-md-flex my-1 px-1">
+                <!-- page_heading_menu -->
+                
+            </ul>
+    
+            <div id="usernavigation" class="navbar-nav ms-auto h-100">
+                    <div id="searchinput-navbar-692d733aab167692d733aaa0f53" class="simplesearchform">
+    <div class="collapse" id="searchform-navbar">
+        <form autocomplete="off" action="https://cours.univ-paris1.fr/search/index.php" method="get" accept-charset="utf-8" class="mform d-flex flex-wrap align-items-center searchform-navbar">
+                <input type="hidden" name="context" value="2302671">
+            <div class="input-group" role="group" aria-labelledby="searchgrouplabel-692d733aab167692d733aaa0f53">
+                    <span id="searchgrouplabel-692d733aab167692d733aaa0f53" class="sr-only">Recherche sur le site</span>
+                <label for="searchinput-692d733aab167692d733aaa0f53">
+                    <span class="sr-only">Rechercher</span>
+                </label>
+                    <input type="text"
+                       id="searchinput-692d733aab167692d733aaa0f53"
+                       class="form-control withclear"
+                       placeholder="Rechercher"
+                       aria-label="Rechercher"
+                       name="q"
+                       data-region="input"
+                       autocomplete="off"
+                    >
+                    <a class="btn btn-close"
+                        data-action="closesearch"
+                        data-toggle="collapse"
+                        href="#searchform-navbar"
+                        role="button"
+                        title="Fermer"
+                    >
+                        <i class="icon fa fa-xmark fa-fw " aria-hidden="true" ></i>
+                        <span class="sr-only">Fermer</span>
+                    </a>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-submit" data-action="submit" title="Lancer la recherche">
+                        <i class="icon fa fa-magnifying-glass fa-fw " aria-hidden="true" ></i>
+                        <span class="sr-only">Lancer la recherche</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <a
+        class="btn btn-open rounded-0 nav-link"
+        data-toggle="collapse"
+        data-action="opensearch"
+        href="#searchform-navbar"
+        role="button"
+        aria-expanded="false"
+        aria-controls="searchform-navbar"
+        title="Activer/désactiver la saisie de recherche"
+    >
+        <i class="icon fa fa-magnifying-glass fa-fw " aria-hidden="true" ></i>
+        <span class="sr-only">Activer/désactiver la saisie de recherche</span>
+    </a>
+</div>
+                    <div class="divider border-start h-75 align-self-center mx-1"></div>
+                    <div class="langmenu">
+                        <div class="dropdown show">
+                            <a href="#" role="button" id="lang-menu-toggle" data-toggle="dropdown" aria-label="Langue" aria-haspopup="true" aria-controls="lang-action-menu" class="btn dropdown-toggle">
+                                <i class="icon fa fa-language fa-fw me-1" aria-hidden="true"></i>
+                                <span class="langbutton">
+                                    Français ‎(fr)‎
+                                </span>
+                                <b class="caret"></b>
+                            </a>
+                            <div role="menu" aria-labelledby="lang-menu-toggle" id="lang-action-menu" class="dropdown-menu dropdown-menu-right">
+                                        <a href="https://cours.univ-paris1.fr/enrol/index.php?id=46762&amp;lang=en" class="dropdown-item ps-5" role="menuitem" 
+                                                lang="en" >
+                                            English ‎(en)‎
+                                        </a>
+                                        <a href="#" class="dropdown-item ps-5" role="menuitem" aria-current="true"
+                                                >
+                                            Français ‎(fr)‎
+                                        </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider border-start h-75 align-self-center mx-1"></div>
+                
+                <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+                        <div class="usermenu">
+                                <span class="login ps-2">
+                                        Vous êtes connecté anonymement
+                                        <div class="divider border-start h-75 align-self-center mx-2"></div>
+                                        <a href="https://cours.univ-paris1.fr/login/index.php">Connexion</a>
+                                </span>
+                        </div>
+                </div>
+                
+    
+            </div>
+        </div>
+    </nav>
+    
+<div  class="drawer   drawer-left  drawer-primary d-print-none not-initialized" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1">
+    <div class="drawerheader">
+        <button
+            class="btn drawertoggle icon-no-margin hidden"
+            data-toggler="drawers"
+            data-action="closedrawer"
+            data-target="theme_boost-drawers-primary"
+            data-toggle="tooltip"
+            data-placement="right"
+            title="Fermer le tiroir"
+        >
+            <i class="icon fa fa-xmark fa-fw " aria-hidden="true" ></i>
+        </button>
+                <a
+            href="https://cours.univ-paris1.fr/"
+            title="EPI"
+            data-region="site-home-link"
+            class="aabtn text-reset d-flex align-items-center py-1 h-100"
+        >
+                <span class="sitename" title="EPI">EPI</span>
+        </a>
+
+        <div class="drawerheadercontent hidden">
+            
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                <a href="https://cours.univ-paris1.fr/"  class=" list-group-item list-group-item-action active " aria-current="true" >
+                    Accueil
+                </a>
+                <a href="https://cours.univ-paris1.fr/calendar/view.php?view=month"  class=" list-group-item list-group-item-action  "  >
+                    Calendrier
+                </a>
+                    
+                    <a id="drop-down-1" href="#" class=" list-group-item list-group-item-action icons-collapse-expand collapsed d-flex" title="" data-toggle="collapse" data-target="#drop-down-menu-1" aria-expanded="false" aria-controls="drop-down-menu-1">
+                        Index des espaces
+                        <span class="ms-auto expanded-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" ></i>
+                            <span class="sr-only">
+                                Replier
+                            </span>
+                        </span>
+                        <span class="ms-auto collapsed-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" ></i>
+                            <span class="sr-only">
+                                Déplier
+                            </span>
+                        </span>
+                    </a>
+                    <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-1" aria-labelledby="drop-down-1">
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/mod/page/view.php?id=1357128"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Index des espaces 2025-2026 par département
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/mod/page/view.php?id=1165274"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Index des espaces 2024-2025 par département
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/mod/page/view.php?id=958472"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Index des espaces 2023-2024 par département
+                                    </a>
+                    
+                    </div>
+                    
+                    <a id="drop-down-6" href="#" class=" list-group-item list-group-item-action icons-collapse-expand collapsed d-flex" title="" data-toggle="collapse" data-target="#drop-down-menu-6" aria-expanded="false" aria-controls="drop-down-menu-6">
+                        Mon parcours
+                        <span class="ms-auto expanded-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" ></i>
+                            <span class="sr-only">
+                                Replier
+                            </span>
+                        </span>
+                        <span class="ms-auto collapsed-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" ></i>
+                            <span class="sr-only">
+                                Déplier
+                            </span>
+                        </span>
+                    </a>
+                    <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-6" aria-labelledby="drop-down-6">
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/calendar/"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Calendrier
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/grade/report/overview/index.php"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Notes
+                                    </a>
+                    
+                    </div>
+                    
+                    <a id="drop-down-9" href="#" class=" list-group-item list-group-item-action icons-collapse-expand collapsed d-flex" title="" data-toggle="collapse" data-target="#drop-down-menu-9" aria-expanded="false" aria-controls="drop-down-menu-9">
+                        Ressources
+                        <span class="ms-auto expanded-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" ></i>
+                            <span class="sr-only">
+                                Replier
+                            </span>
+                        </span>
+                        <span class="ms-auto collapsed-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" ></i>
+                            <span class="sr-only">
+                                Déplier
+                            </span>
+                        </span>
+                    </a>
+                    <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-9" aria-labelledby="drop-down-9">
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="#up"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Ressources pédagogiques
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/fixe/annuaire-EPI"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Annuaire des EPI ouverts à tous et d'intérêt général
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://www.enseignementsup-recherche.gouv.fr/ressources-pedagogiques/ "target="_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Ressources pédagogiques libres
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://www.canal-u.tv/ "target="_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Vidéothèque Canal-U
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="#up"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Bibliothèque/Documentation
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://mikado.univ-paris1.fr "target="_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Bibliothèque numérique Mikado
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/fixe/SCD-BOB"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         BOB - Boîte à Outils de la Bibliothèque
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="#up"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Langues
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="http://uoh.univ-montp3.fr/j_ameliore_ma_maitrise_du_francais/portail/ "target="_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                         Améliorer son français à l'écrit
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/fixe/EPIGRAM"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        EPIGRAM
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/fixe/ami"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Tandem
+                                    </a>
+                    
+                    </div>
+                    
+                    <a id="drop-down-21" href="#" class=" list-group-item list-group-item-action icons-collapse-expand collapsed d-flex" title="" data-toggle="collapse" data-target="#drop-down-menu-21" aria-expanded="false" aria-controls="drop-down-menu-21">
+                        Aide
+                        <span class="ms-auto expanded-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" ></i>
+                            <span class="sr-only">
+                                Replier
+                            </span>
+                        </span>
+                        <span class="ms-auto collapsed-icon icon-no-margin mx-2">
+                            <i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" ></i>
+                            <span class="sr-only">
+                                Déplier
+                            </span>
+                        </span>
+                    </a>
+                    <div class="collapse list-group-item p-0 border-0" role="menu" id="drop-down-menu-21" aria-labelledby="drop-down-21">
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="#up"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Aide étudiants
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/mod/page/view.php?id=293182%20%22target%3D%22_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Comment se connecter
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/course/view.php?id=12%20%22target%3D%22_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Guide EPI étudiants
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://ent.univ-paris1.fr/gun "target="_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Guide des services numériques
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="#up"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Aide enseignants
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/mod/page/view.php?id=293182%20%22target%3D%22_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Comment se connecter
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/fixe/modedemploi "target="_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Mode d'emploi des EPI
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/fixe/enseignerenligne "target="_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Construire un cours en ligne
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://cours.univ-paris1.fr/fixe/FAQ "target="_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Questions fréquentes
+                                    </a>
+                    
+                            <!-- Third level child support - Custom -->
+                    
+                                    <a href="https://ent.univ-paris1.fr/gun-pers "target="_blank"  class="ps-5 bg-light list-group-item list-group-item-action " >
+                    
+                                        Guide des services numériques
+                                    </a>
+                    
+                    </div>
+        </div>
+
+    </div>
+</div>
+
+
+    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers   drag-container">
+
+
+
+        <div class="main-inner-wrapper main-inner-outside-none main-inner-outside-nextmaincontent">
+
+        <div id="topofscroll" class="main-inner">
+            <div class="drawer-toggles d-flex">
+            </div>
+            
+            
+            <header id="page-header" class="header-maxwidth d-print-none">
+    <div class="w-100">
+        <div class="d-flex flex-wrap">
+            <div id="page-navbar">
+                <nav aria-label="Barre de navigation">
+    <ol class="breadcrumb"></ol>
+</nav>
+            </div>
+            <div class="ms-auto d-flex">
+                
+            </div>
+            <div id="course-header">
+                
+            </div>
+        </div>
+                <div class="d-flex align-items-center">
+                    <div class="me-auto d-flex flex-column">
+                        <div>
+                            <div class="page-context-header d-flex flex-wrap align-items-center mb-2">
+    <div class="page-header-headings">
+        <h1 class="h2 mb-0">Applied Data Science in Finance (Python) - Applied Data Science</h1>
+    </div>
+</div>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="header-actions-container ms-auto" data-region="header-actions-container">
+                    </div>
+                </div>
+    </div>
+</header>
+            <div id="page-content" class="pb-3 d-print-block">
+                <div id="region-main-box">
+                    <div id="region-main">
+
+                        <span class="notifications" id="user-notifications"></span>
+                        
+                        <div role="main"><span id="maincontent"></span><h2>Options d’inscription</h2><div class="box py-3 generalbox info"><div class="coursebox clearfix" data-courseid="46762" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://cours.univ-paris1.fr/course/view.php?id=46762">Applied Data Science in Finance (Python) - Applied Data Science</a></h3><div class="moreinfo"></div></div><div class="content"><div class="d-flex"><div class="flex-grow-1"><ul class="teachers"><li><span class="font-weight-bold">Enseignant éditeur: </span><a href="https://cours.univ-paris1.fr/user/profile.php?id=138873">Renault Thomas</a></li><li><span class="font-weight-bold">Enseignant éditeur: </span><a href="https://cours.univ-paris1.fr/user/profile.php?id=425852">Rigou Thomas</a></li></ul><div class="customfields-container"><div class="customfield customfield_textarea customfield_up1rofpath">
+        <span class="customfieldname">Chemin ROF</span><span class="customfieldseparator">: </span><span class="customfieldvalue"><div class="text_to_html">/École d'économie de la Sorbonne/Master 2 indifférencié Finance technology data/Semestre 3/UE2 Data/Applied Data Science in Finance (Python)</div></span>
+    </div><div class="customfield customfield_textarea customfield_up1rofpathid">
+        <span class="customfieldname">Chemin ROFid</span><span class="customfieldseparator">: </span><span class="customfieldvalue"><div class="text_to_html">/02/UP1-PROG-02-MIB50A-125/UP1-PROG-ELP-B5IAS325/UP1-C-ELP-B5EIA319/UP1-C-ELP-B5IA0119</div></span>
+    </div><div class="customfield customfield_text customfield_up1code">
+        <span class="customfieldname">Code Apogée</span><span class="customfieldseparator">: </span><span class="customfieldvalue">B5IA0119</span>
+    </div><div class="customfield customfield_text customfield_up1composante">
+        <span class="customfieldname">Composante</span><span class="customfieldseparator">: </span><span class="customfieldvalue">École d'économie de la Sorbonne</span>
+    </div><div class="customfield customfield_text customfield_up1semestre">
+        <span class="customfieldname">Semestre</span><span class="customfieldseparator">: </span><span class="customfieldvalue">3</span>
+    </div><div class="customfield customfield_text customfield_up1niveau">
+        <span class="customfieldname">Niveau</span><span class="customfieldseparator">: </span><span class="customfieldvalue">M2</span>
+    </div><div class="customfield customfield_text customfield_up1niveaulmda">
+        <span class="customfieldname">Niveau LMDA</span><span class="customfieldseparator">: </span><span class="customfieldvalue">Masters</span>
+    </div><div class="customfield customfield_text customfield_up1niveauannee">
+        <span class="customfieldname">Niveau année</span><span class="customfieldseparator">: </span><span class="customfieldvalue">5</span>
+    </div><div class="customfield customfield_text customfield_up1composition">
+        <span class="customfieldname">Composition</span><span class="customfieldseparator">: </span><span class="customfieldvalue">Cours magistral</span>
+    </div><div class="customfield customfield_textarea customfield_up1diplome">
+        <span class="customfieldname">Diplôme</span><span class="customfieldseparator">: </span><span class="customfieldvalue">Master 2 indifférencié Finance technology data</span>
+    </div><div class="customfield customfield_text customfield_up1domaine">
+        <span class="customfieldname">Domaine ROF</span><span class="customfieldseparator">: </span><span class="customfieldvalue">[Sciences économiques] Sciences économiques</span>
+    </div><div class="customfield customfield_text customfield_up1type">
+        <span class="customfieldname">Type ROF</span><span class="customfieldseparator">: </span><span class="customfieldvalue">[M2] </span>
+    </div><div class="customfield customfield_text customfield_up1nature">
+        <span class="customfieldname">Nature ROF</span><span class="customfieldseparator">: </span><span class="customfieldvalue">[5] BAC+5</span>
+    </div><div class="customfield customfield_text customfield_up1cycle">
+        <span class="customfieldname">Cycle ROF</span><span class="customfieldseparator">: </span><span class="customfieldvalue">[2] </span>
+    </div><div class="customfield customfield_text customfield_up1rythme">
+        <span class="customfieldname">Rythme ROF</span><span class="customfieldseparator">: </span><span class="customfieldvalue">[Apprentis.,Initiale] </span>
+    </div><div class="customfield customfield_text customfield_up1langue">
+        <span class="customfieldname">Langue</span><span class="customfieldseparator">: </span><span class="customfieldvalue">[] </span>
+    </div><div class="customfield customfield_text customfield_up1mention">
+        <span class="customfieldname">Mention</span><span class="customfieldseparator">: </span><span class="customfieldvalue">Monnaie, banque, finance, assurance</span>
+    </div><div class="customfield customfield_textarea customfield_up1specialite">
+        <span class="customfieldname">Spécialité</span><span class="customfieldseparator">: </span><span class="customfieldvalue">Finance technology data</span>
+    </div></div></div></div></div></div></div><div id="notice" class="box py-3 generalbox">Les visiteurs anonymes ne peuvent pas accéder à ce cours. Veuillez vous connecter.</div><div class="continuebutton">
+    <form method="get" action="https://cours.univ-paris1.fr/login/index.php" >
+        <button type="submit" class="btn btn-primary"
+            id="single_button692d733aaa0f54"
+            
+            
+            >Continuer</button>
+    </form>
+</div><div id="local-accessibility-buttoncontainer" class="local-accessibility-buttoncontainer">
+    <button type="button" class="btn btn-primary" title="Accessibilité">
+        <i class="fa fa-universal-access"></i>
+    </button>
+</div><div class="local-accessibility-panel border-primary p-0 card col-10 col-lg-8">
+    <div class="card-header bg-primary text-light">
+        <i class="fa fa-universal-access"></i>
+        Accessibilité
+        <a href="javascript:void(0);" id="local-accessibility-closebtn" class="float-right text-light text-decoration-none">
+            <i class="fa fa-times"></i>
+        </a>
+    </div>
+    <div class="card-body">
+        <div class="container">
+            <div class="row">
+                <div class="container-fluid text-right mb-2">
+                    <a href="https://cours.univ-paris1.fr/local/accessibility/resetall.php?returnurl=https%3A%2F%2Fcours.univ-paris1.fr%2Fenrol%2Findex.php%3Fid%3D46762&amp;sesskey=7bef143g9n" class="btn btn-secondary">
+                        Tout remettre à zéro
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-6 card">
+                        <div class="card-body backgroundcolour-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Couleur de fond" title="Couleur de fond" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_backgroundcolour/1764148000/icon" />
+                                    Couleur de fond
+                                </strong>
+                            </p>
+                            <div class="container" id="accessibility_backgroundcolour-container">
+    <input type="color" name="color" value="" />
+    <button type="button" class="btn btn-light accessibility_backgroundcolour-resetbtn">
+        Remettre à zéro
+    </button>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card">
+                        <div class="card-body fontface-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Police" title="Police" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_fontface/1764148000/icon" />
+                                    Police
+                                </strong>
+                            </p>
+                            <div class="container" id="accessibility_fontface-container">
+    <div class="btn-group-vertical w-100">
+        <button type="button" class="btn btn-light accessibility_fontface-resetbtn">
+            Remettre à zéro
+        </button>
+        <button type="button" class="btn btn-light accessibility_fontface-classbtn" data-value="serif" style="font-family: none !important;">
+            Serif
+        </button>
+        <button type="button" class="btn btn-light accessibility_fontface-classbtn" data-value="sansserif" style="font-family: sans-serif !important;">
+            Sans serif
+        </button>
+        <button type="button" class="btn btn-light accessibility_fontface-classbtn" data-value="dyslexic" style="font-family: opendyslexic !important;">
+            Dyslexique
+        </button>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card">
+                        <div class="card-body fontkerning-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Crénage de la police" title="Crénage de la police" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_fontkerning/1764148000/icon" />
+                                    Crénage de la police
+                                </strong>
+                            </p>
+                            <div class="container" id="accessibility_fontkerning-container">
+    <div class="btn-group">
+        <button type="button" class="btn btn-light btn-toggler">Désactiver</button>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card">
+                        <div class="card-body imagevisibility-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Visibilité de l’image" title="Visibilité de l’image" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_imagevisibility/1764148000/icon" />
+                                    Visibilité de l’image
+                                </strong>
+                            </p>
+                            <div class="container" id="accessibility_imagevisibility-container">
+    <div class="btn-group">
+        <button type="button" class="btn btn-light btn-toggler">Cacher les images</button>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card">
+                        <div class="card-body lineheight-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Hauteur de ligne" title="Hauteur de ligne" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_lineheight/1764148000/icon" />
+                                    Hauteur de ligne
+                                </strong>
+                            </p>
+                            <div class="container">
+    <div class="row">
+        <div class="col-1 px-0">
+            <button type="button" class="btn btn-light text-center" id="accessibility_lineheight-btndown">
+                -
+            </button>
+        </div>
+        <div class="col-8 px-1 py-2">
+            <input type="range" class="form-range w-100" min="0.5" max="3" step="0.1" id="accessibility_lineheight-input" value="1.2"
+                data-default="1.2">
+        </div>
+        <div class="col-2 px-2 py-2" id="accessibility_lineheight-label">
+            1.2
+        </div>
+        <div class="col-1 px-0">
+            <button type="button" class="btn btn-light text-center" id="accessibility_lineheight-btnup">
+                +
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button type="button" class="w-100 btn btn-sm btn-light" id="accessibility_lineheight-btnreset">
+                Remettre à zéro
+            </button>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card">
+                        <div class="card-body linkhighlight-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Surbrillance de lien" title="Surbrillance de lien" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_linkhighlight/1764148000/icon" />
+                                    Surbrillance de lien
+                                </strong>
+                            </p>
+                            <div class="container" id="accessibility_linkhighlight-container">
+    <div class="btn-group">
+        <button type="button" class="btn btn-light btn-toggler">Désactivé</button>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card">
+                        <div class="card-body textalignment-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Alignement du texte" title="Alignement du texte" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_textalignment/1764148000/icon" />
+                                    Alignement du texte
+                                </strong>
+                            </p>
+                            <div class="container" id="accessibility_textalignment-container">
+    <button type="button" class="btn btn-light accessibility_textalignment-resetbtn w-100">
+        Remettre à zéro
+    </button>
+    <div class="btn-group w-100">
+        <button
+            type="button"
+            class="btn btn-light accessibility_textalignment-optionbtn "
+            data-value="left"
+        >
+            <i class="fa-solid fa-align-left"></i>
+            <span>
+                Gauche
+            </span>
+        </button>
+        <button
+            type="button"
+            class="btn btn-light accessibility_textalignment-optionbtn "
+            data-value="center"
+        >
+            <i class="fa-solid fa-align-center"></i>
+            <span>
+                Centré
+            </span>
+        </button>
+        <button
+            type="button"
+            class="btn btn-light accessibility_textalignment-optionbtn "
+            data-value="right"
+        >
+            <i class="fa-solid fa-align-right"></i>
+            <span>
+                Droite
+            </span>
+        </button>
+        <button
+            type="button"
+            class="btn btn-light accessibility_textalignment-optionbtn "
+            data-value="justify"
+        >
+            <i class="fa-solid fa-align-justify"></i>
+            <span>
+                Justifié
+            </span>
+        </button>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card">
+                        <div class="card-body fontsize-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Taille de police" title="Taille de police" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_fontsize/1764148000/icon" />
+                                    Taille de police
+                                </strong>
+                            </p>
+                            <div class="container">
+    <div class="row">
+        <div class="col-1 px-0">
+            <button type="button" class="btn btn-light text-center" id="accessibility_fontsize-btndown">
+                -
+            </button>
+        </div>
+        <div class="col-8 px-1 py-2">
+            <input type="range" class="form-range w-100" min="0.5" max="2" step="0.25" id="accessibility_fontsize-input" value="1"
+                data-default="1">
+        </div>
+        <div class="col-2 px-2 py-2" id="accessibility_fontsize-label">
+            1
+        </div>
+        <div class="col-1 px-0">
+            <button type="button" class="btn btn-light text-center" id="accessibility_fontsize-btnup">
+                +
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button type="button" class="w-100 btn btn-sm btn-light" id="accessibility_fontsize-btnreset">
+                Remettre à zéro
+            </button>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card">
+                        <div class="card-body letterspacing-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Espacement des lettres" title="Espacement des lettres" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_letterspacing/1764148000/icon" />
+                                    Espacement des lettres
+                                </strong>
+                            </p>
+                            <div class="container">
+    <div class="row">
+        <div class="col-1 px-0">
+            <button type="button" class="btn btn-light text-center" id="accessibility_letterspacing-btndown">
+                -
+            </button>
+        </div>
+        <div class="col-8 px-1 py-2">
+            <input type="range" class="form-range w-100" min="-0.1" max="0.5" step="0.1" id="accessibility_letterspacing-input" value="0"
+                data-default="0">
+        </div>
+        <div class="col-2 px-2 py-2" id="accessibility_letterspacing-label">
+            0
+        </div>
+        <div class="col-1 px-0">
+            <button type="button" class="btn btn-light text-center" id="accessibility_letterspacing-btnup">
+                +
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button type="button" class="w-100 btn btn-sm btn-light" id="accessibility_letterspacing-btnreset">
+                Remettre à zéro
+            </button>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-6 card">
+                        <div class="card-body textcolour-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Couleur de texte" title="Couleur de texte" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_textcolour/1764148000/icon" />
+                                    Couleur de texte
+                                </strong>
+                            </p>
+                            <div class="container" id="accessibility_textcolour-container">
+    <input type="color" name="color" value="" />
+    <button type="button" class="btn btn-light accessibility_textcolour-resetbtn">
+        Remettre à zéro
+    </button>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 card">
+                        <div class="card-body paragraphwidth-container">
+                            <p>
+                                <strong>
+                                    <img class="icon " alt="Paragraph Width" title="Paragraph Width" src="https://cours.univ-paris1.fr/theme/image.php/boost_union/accessibility_paragraphwidth/1764148000/icon" />
+                                    Paragraph Width
+                                </strong>
+                            </p>
+                            <div class="container">
+    <div class="row">
+        <div class="col-1 px-0">
+            <button type="button" class="btn btn-light text-center" id="accessibility_paragraphwidth-btndown">
+                -
+            </button>
+        </div>
+        <div class="col-8 px-1 py-2">
+            <input type="range" class="form-range w-100" min="0" max="100" step="25" id="accessibility_paragraphwidth-input" value="0"
+                data-default="0">
+        </div>
+        <div class="col-2 px-2 py-2" id="accessibility_paragraphwidth-label">
+            0
+        </div>
+        <div class="col-1 px-0">
+            <button type="button" class="btn btn-light text-center" id="accessibility_paragraphwidth-btnup">
+                +
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button type="button" class="w-100 btn btn-sm btn-light" id="accessibility_paragraphwidth-btnreset">
+                Remettre à zéro
+            </button>
+        </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+                        
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+
+        
+        <footer id="page-footer" class="footer-popover bg-white">
+            <div data-region="footer-container-popover">
+                    <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="Afficher le pied de page">
+                        <i class="icon fa fa-question fa-fw " aria-hidden="true" ></i>
+                    </button>
+                <div id="boost-union-footer-buttons">
+                </div>
+            </div>
+                <div class="footer-content-popover container" data-region="footer-content-popover">
+                            <div class="footer-section p-3 border-bottom">
+                                        <div class="footer-support-link"><a href="http://docs.moodle.org/405/fr/enrol/index" target="_blank"><i class="icon fa fa-book fa-fw " aria-hidden="true" ></i>Documentation pour cette page<i class="icon fa fa-arrow-up-right-from-square fa-fw fa fa-externallink fa-fw"  title="S’ouvre dans une nouvelle fenêtre" role="img" aria-label="S’ouvre dans une nouvelle fenêtre"></i></a></div>
+        
+        
+                            </div>
+                        <div class="footer-section p-3 border-bottom">
+                            <div class="logininfo">
+                                <div class="logininfo">Vous êtes connecté anonymement (<a href="https://cours.univ-paris1.fr/login/index.php">Connexion</a>)</div>
+                            </div>
+                        </div>
+                    <div class="tool_usertours-resettourcontainer"></div>
+                    
+                        <div class="footer-section p-3 border-bottom">
+                            <div class="tool_dataprivacy"><a href="https://cours.univ-paris1.fr/admin/tool/dataprivacy/summary.php">Résumé de conservation de données</a></div><div><a class="mobilelink" href="https://download.moodle.org/mobile?version=2024100707.01&amp;lang=fr&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Obtenir l’app mobile</a></div>
+                        </div>
+                        <div class="footer-section p-3 border-bottom">
+                            <div>Fourni par <a href="https://moodle.com">Moodle</a></div>
+                        </div>
+                    <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://cours.univ-paris1.fr/lib/requirejs.php/1764148000/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://cours.univ-paris1.fr/lib/javascript.php/1764148000/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://cours.univ-paris1.fr/lib/javascript.php/1764148000/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://cours.univ-paris1.fr/lib/javascript.php/1764148000/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://cours.univ-paris1.fr/lib/javascript.php/1764148000/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+M.util.js_pending('filter_glossary/autolinker'); require(['filter_glossary/autolinker'], function(amd) {amd.init(); M.util.js_complete('filter_glossary/autolinker');});;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});","lang":"fr"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('fr');
+});;
+M.util.js_pending('local_accessibility/colourwidget'); require(['local_accessibility/colourwidget'], function(amd) {amd.init("accessibility_backgroundcolour", "backgroundcolour", "background-color", "accessibility-backgroundcolour", "body, body *:not(.mediaplugin, .mediaplugin *, .qnbutton *, .filter_mathjaxloader_equation *, img)"); M.util.js_complete('local_accessibility/colourwidget');});;
+M.util.js_pending('accessibility_fontface/script'); require(['accessibility_fontface/script'], function(amd) {amd.init(); M.util.js_complete('accessibility_fontface/script');});;
+M.util.js_pending('accessibility_fontkerning/script'); require(['accessibility_fontkerning/script'], function(amd) {amd.init(null); M.util.js_complete('accessibility_fontkerning/script');});;
+M.util.js_pending('accessibility_imagevisibility/script'); require(['accessibility_imagevisibility/script'], function(amd) {amd.init(null); M.util.js_complete('accessibility_imagevisibility/script');});;
+M.util.js_pending('accessibility_lineheight/script'); require(['accessibility_lineheight/script'], function(amd) {amd.init(null); M.util.js_complete('accessibility_lineheight/script');});;
+M.util.js_pending('accessibility_linkhighlight/script'); require(['accessibility_linkhighlight/script'], function(amd) {amd.init(null); M.util.js_complete('accessibility_linkhighlight/script');});;
+M.util.js_pending('accessibility_textalignment/script'); require(['accessibility_textalignment/script'], function(amd) {amd.init(); M.util.js_complete('accessibility_textalignment/script');});;
+M.util.js_pending('accessibility_fontsize/script'); require(['accessibility_fontsize/script'], function(amd) {amd.init(null); M.util.js_complete('accessibility_fontsize/script');});;
+M.util.js_pending('accessibility_letterspacing/script'); require(['accessibility_letterspacing/script'], function(amd) {amd.init(null); M.util.js_complete('accessibility_letterspacing/script');});;
+M.util.js_pending('local_accessibility/colourwidget'); require(['local_accessibility/colourwidget'], function(amd) {amd.init("accessibility_textcolour", "textcolour", "color", "accessibility-textcolour"); M.util.js_complete('local_accessibility/colourwidget');});;
+M.util.js_pending('accessibility_paragraphwidth/script'); require(['accessibility_paragraphwidth/script'], function(amd) {amd.init(null); M.util.js_complete('accessibility_paragraphwidth/script');});;
+M.util.js_pending('block_settings/settingsblock'); require(['block_settings/settingsblock'], function(amd) {amd.init("253710", null); M.util.js_complete('block_settings/settingsblock');});;
+M.util.js_pending('theme_boost_union/backtotopbutton'); require(['theme_boost_union/backtotopbutton'], function(amd) {amd.init(); M.util.js_complete('theme_boost_union/backtotopbutton');});;
+M.util.js_pending('theme_boost_union/footerbuttons'); require(['theme_boost_union/footerbuttons'], function(amd) {amd.init(); M.util.js_complete('theme_boost_union/footerbuttons');});;
+
+    require(['core/moremenu'], function(moremenu) {
+        moremenu(document.querySelector('#moremenu-692d733aa8c43-navbar-nav'));
+    });
+;
+
+require(
+[
+    'jquery',
+],
+function(
+    $
+) {
+    var uniqid = "692d733aaaef8692d733aaa0f52";
+    var container = $('#searchinput-navbar-' + uniqid);
+    var opensearch = container.find('[data-action="opensearch"]');
+    var input = container.find('[data-region="input"]');
+    var submit = container.find('[data-action="submit"]');
+
+    submit.on('click', function(e) {
+        if (input.val() === '') {
+            e.preventDefault();
+        }
+    });
+    container.on('hidden.bs.collapse', function() {
+        opensearch.removeClass('d-none');
+        input.val('');
+    });
+    container.on('show.bs.collapse', function() {
+        opensearch.addClass('d-none');
+    });
+    container.on('shown.bs.collapse', function() {
+        input.focus();
+    });
+});
+;
+
+require(
+[
+    'jquery',
+],
+function(
+    $
+) {
+    var uniqid = "692d733aab167692d733aaa0f53";
+    var container = $('#searchinput-navbar-' + uniqid);
+    var opensearch = container.find('[data-action="opensearch"]');
+    var input = container.find('[data-region="input"]');
+    var submit = container.find('[data-action="submit"]');
+
+    submit.on('click', function(e) {
+        if (input.val() === '') {
+            e.preventDefault();
+        }
+    });
+    container.on('hidden.bs.collapse', function() {
+        opensearch.removeClass('d-none');
+        input.val('');
+    });
+    container.on('show.bs.collapse', function() {
+        opensearch.addClass('d-none');
+    });
+    container.on('shown.bs.collapse', function() {
+        input.focus();
+    });
+});
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+require(['theme_boost/footer-popover'], function(FooterPopover) {
+    FooterPopover.init();
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
+
+
+});
+;
+M.util.js_pending('local_accessibility/panel'); require(['local_accessibility/panel'], function(amd) {amd.init(); M.util.js_complete('local_accessibility/panel');});;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2302671, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});;
+M.util.js_pending('core/storage_validation'); require(['core/storage_validation'], function(amd) {amd.init(1363645840); M.util.js_complete('core/storage_validation');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?delayStartupUntil=configured"></script>
+<script src="https://cours.univ-paris1.fr/lib/javascript.php/1764148000/blocks/up1_creation/javascript/up1creation.js"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Modifi\u00e9 le","name":"Nom","error":"Erreur","info":"Information","yes":"Oui","no":"Non","cancel":"Annuler","confirm":"Confirmer","areyousure":"Voulez-vous vraiment continuer\u00a0?","closebuttontitle":"Fermer","unknownerror":"Erreur inconnue","file":"Fichier","url":"URL","collapseall":"Tout replier","expandall":"Tout d\u00e9plier"},"repository":{"type":"Type","size":"Taille","invalidjson":"Cha\u00eene JSON non valide","nofilesattached":"Aucun fichier joint","filepicker":"S\u00e9lecteur de fichiers","logout":"D\u00e9connexion","nofilesavailable":"Aucun fichier disponible","norepositoriesavailable":"D\u00e9sol\u00e9, aucun de vos d\u00e9p\u00f4ts actuels ne peut retourner de fichiers dans le format requis.","fileexistsdialogheader":"Le fichier existe","fileexistsdialog_editor":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint au texte que vous modifiez.","fileexistsdialog_filemanager":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint","renameto":"Renommer \u00e0 \u00ab\u00a0{$a}\u00a0\u00bb","referencesexist":"Il y a {$a} liens qui pointent vers ce fichier","select":"S\u00e9lectionnez"},"admin":{"confirmdeletecomments":"Voulez-vous vraiment supprimer les commentaires s\u00e9lectionn\u00e9s\u00a0?","confirmation":"Confirmation"},"accessibility_fontkerning":{"turnonkerning":"Activer","turnoffkerning":"D\u00e9sactiver"},"accessibility_imagevisibility":{"hideimages":"Cacher les images","showimages":"Afficher les images"},"accessibility_linkhighlight":{"enabled":"Activ\u00e9","disabled":"D\u00e9sactiv\u00e9"},"debug":{"debuginfo":"Info de d\u00e9bogage","line":"Ligne","stacktrace":"Trace de la pile"},"langconfig":{"labelsep":"&nbsp;"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {M.util.help_popups.setup(Y);
+ M.util.js_pending('random692d733aaa0f55'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random692d733aaa0f55'); });
+})();
+//]]>
+</script>
+
+                </div>
+        
+            <div class="footer-content-debugging footer-dark bg-dark text-light">
+                <div class="container-fluid footer-dark-inner">
+                    
+                </div>
+            </div>
+        
+        </footer>
+        
+            <div id="footnote" class="py-3">
+                <div class="container-fluid px-0">
+                    <p style="text-align: center;"><img class="img-fluid atto_image_button_text-bottom" src="data:image/png;base64,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" alt="Logo et lien vers le site de l'université Panthéon Sorbonne " width="280" height="127"></p>
+<p style="text-align: center;">© 2025 EPI | <a href="https://ent.univ-paris1.fr/mentions">Mentions légales</a> | <a href="https://ent.univ-paris1.fr/contacts">Contacts</a> | <a href="https://cours.univ-paris1.fr/mod/page/view.php?id=293184" target="_blank" rel="noopener">Charte d'utilisation</a> | <a href="https://www.pantheonsorbonne.fr/aide-numerique" target="_blank" rel="noopener">Aide numérique</a> | <a href="https://numerique.pantheonsorbonne.fr/" target="_blank" rel="noopener">Enseigner avec le numérique à Paris 1</a> | <a href="https://www.pantheonsorbonne.fr/accessibilite">Accessibilité : non conforme</a></p>
+                </div>
+            </div>
+    </div>
+    
+</div>
+
+
+</body></html>
