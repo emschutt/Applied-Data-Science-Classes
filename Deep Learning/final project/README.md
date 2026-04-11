@@ -43,6 +43,7 @@ run loaded **96,871** raw listings and produced **42,984 train**,
 - Improved deep-model training with `AdamW`, weight decay, LR scheduling, gradient clipping, and faster dataloaders.
 - Refactored Transformer positional encoding into a shared `src/models/layers.py` module.
 - Fixed interpretability artifact generation for lexical high/low-price signals and hybrid-model vocabulary loading.
+- Synced this README to the refreshed benchmark, regenerated figures, and current saved outputs.
 
 ## Project Structure
 
@@ -62,8 +63,8 @@ src/
 Requires **Python >= 3.11**.
 
 ```bash
-git clone https://github.com/ethanbch/deep-learning-airbnb.git
-cd deep-learning-airbnb
+git clone https://github.com/emschutt/Applied-Data-Science-Classes.git
+cd "Applied-Data-Science-Classes/Deep Learning/final project"
 ```
 
 **With [uv](https://docs.astral.sh/uv/)** (recommended):
@@ -157,7 +158,7 @@ uv run python src/visualization/poster_plots.py --use-neighborhood-overview
 
 ## Results
 
-### Quantitative Benchmark (Test Set)
+### Quantitative Benchmark (Test Set, London 2025-09-14 Snapshot)
 
 | Model                               |       RMSE |        MAE |         R² |
 | ----------------------------------- | ---------: | ---------: | ---------: |
@@ -175,6 +176,9 @@ features to tabular inputs consistently improves performance, and the
 attention-based fusion architecture achieves the best results.
 
 ### Visual Results
+
+The figures below are the current regenerated outputs saved under
+`data/results/london/plots/`.
 
 ![Figure 1 - Model benchmark](data/results/london/plots/figure_1_methodological_benchmark.png)
 _Figure 1 — R² comparison across all model families._
