@@ -1,0 +1,12 @@
+{
+  "city": "london",
+  "target": "log_price",
+  "text_source": "description + neighborhood_overview",
+  "rnn_type": "lstm",
+  "best_val_loss": 0.27602270377884597,
+  "metrics": {
+    "rmse": 0.5259388874272566,
+    "mae": 0.38949206998508457,
+    "r2": 0.5156956690913123
+  }
+}

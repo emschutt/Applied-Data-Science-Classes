@@ -1,0 +1,11 @@
+feature,coefficient
+cat__room_type_Hotel room,232948912995.3168
+cat__room_type_Entire home/apt,232948912995.02625
+cat__room_type_Private room,232948912994.27975
+cat__room_type_Shared room,232948912993.76764
+num__longitude,-0.4460868152651745
+num__latitude,0.16291420854697003
+num__bathrooms,0.13030930970059865
+num__accommodates,0.10894566795106221
+num__bedrooms,0.0886137856450373
+num__beds,-0.05234140042916916

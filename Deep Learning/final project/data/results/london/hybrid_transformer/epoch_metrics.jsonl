@@ -1,0 +1,15 @@
+{"epoch": 1, "train_loss": 0.6459095422591041, "val_loss": 0.20466854850938634, "best_val_loss": 0.20466854850938634, "patience_counter": 0}
+{"epoch": 2, "train_loss": 0.296564712571339, "val_loss": 0.20630129877829342, "best_val_loss": 0.20466854850938634, "patience_counter": 1}
+{"epoch": 3, "train_loss": 0.2733813817887561, "val_loss": 0.1688975195143901, "best_val_loss": 0.1688975195143901, "patience_counter": 0}
+{"epoch": 4, "train_loss": 0.25853640549391005, "val_loss": 0.20271704198644755, "best_val_loss": 0.1688975195143901, "patience_counter": 1}
+{"epoch": 5, "train_loss": 0.24608597212356495, "val_loss": 0.16062272868984984, "best_val_loss": 0.16062272868984984, "patience_counter": 0}
+{"epoch": 6, "train_loss": 0.23584633627994842, "val_loss": 0.17190755893690762, "best_val_loss": 0.16062272868984984, "patience_counter": 1}
+{"epoch": 7, "train_loss": 0.2242677575235546, "val_loss": 0.16997941566165892, "best_val_loss": 0.16062272868984984, "patience_counter": 2}
+{"epoch": 8, "train_loss": 0.217366115997651, "val_loss": 0.15150274871815664, "best_val_loss": 0.15150274871815664, "patience_counter": 0}
+{"epoch": 9, "train_loss": 0.20759560484782336, "val_loss": 0.1816165201497795, "best_val_loss": 0.15150274871815664, "patience_counter": 1}
+{"epoch": 10, "train_loss": 0.2003528653754439, "val_loss": 0.1649469085439721, "best_val_loss": 0.15150274871815664, "patience_counter": 2}
+{"epoch": 11, "train_loss": 0.19532921182561272, "val_loss": 0.15118289588361206, "best_val_loss": 0.15118289588361206, "patience_counter": 0}
+{"epoch": 12, "train_loss": 0.18858005636157257, "val_loss": 0.15392913305271513, "best_val_loss": 0.15118289588361206, "patience_counter": 1}
+{"epoch": 13, "train_loss": 0.18442568864077802, "val_loss": 0.14949339701504002, "best_val_loss": 0.14949339701504002, "patience_counter": 0}
+{"epoch": 14, "train_loss": 0.1749402622331926, "val_loss": 0.16045492141872675, "best_val_loss": 0.14949339701504002, "patience_counter": 1}
+{"epoch": 15, "train_loss": 0.17034951860503558, "val_loss": 0.16164237155017164, "best_val_loss": 0.14949339701504002, "patience_counter": 2}
